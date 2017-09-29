@@ -13,8 +13,6 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import com.tek.gej.utils.Window;
-
 public abstract class GameInstance {
 	
 	public int width;
