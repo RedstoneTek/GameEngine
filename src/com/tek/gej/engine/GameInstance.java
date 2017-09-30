@@ -21,7 +21,6 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public abstract class GameInstance {
-	
 	/*
 	 * Variables related to the gui
 	 */

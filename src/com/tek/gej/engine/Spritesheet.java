@@ -11,7 +11,6 @@ package com.tek.gej.engine;
 import java.awt.image.BufferedImage;
 
 public class Spritesheet {
-	
 	/*
 	 * These variables hold the information relative to the spritesheet
 	 */

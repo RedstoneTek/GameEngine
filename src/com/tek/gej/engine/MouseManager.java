@@ -11,7 +11,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class MouseManager implements MouseListener{
-	
 	//Holds the GameInstance instance
 	GameInstance gi;
 	

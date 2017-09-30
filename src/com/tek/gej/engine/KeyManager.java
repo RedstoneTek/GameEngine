@@ -11,7 +11,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class KeyManager implements KeyListener{
-	
 	//This boolean array holds every pressed key, available through pressed[KeyEvent.VK_YOURKEY]
 	public boolean[] pressed = new boolean[1024];
 	

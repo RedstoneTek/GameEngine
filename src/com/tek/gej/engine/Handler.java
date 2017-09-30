@@ -13,7 +13,6 @@ package com.tek.gej.engine;
 import java.util.ArrayList;
 
 public class Handler {
-	
 	//Used to stop the gameloop
 	public boolean exit = false;
 	

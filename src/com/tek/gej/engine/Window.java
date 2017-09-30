@@ -14,7 +14,6 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 public class Window extends JFrame {
-
 	/*
 	 * Default JFrame related variables
 	 */
