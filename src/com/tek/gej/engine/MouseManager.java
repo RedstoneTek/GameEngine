@@ -2,7 +2,7 @@
  * The MouseManager class handles mouse clicks and mouse movements
  * 
  * @author RedstoneTek
- * @version 0.3
+ * @version 0.31
  */
 
 package com.tek.gej.engine;

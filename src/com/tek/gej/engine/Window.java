@@ -2,7 +2,7 @@
  * The Window class creates a JFrame with a Canvas inside of it.
  * 
  * @author RedstoneTek
- * @version 0.3
+ * @version 0.31
  */
 
 package com.tek.gej.engine;

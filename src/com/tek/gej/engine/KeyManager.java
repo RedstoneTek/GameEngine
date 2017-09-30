@@ -2,7 +2,7 @@
  * The KeyManager class will handle key types and key states
  * 
  * @author RedstoneTek
- * @version 0.3
+ * @version 0.31
  */
 
 package com.tek.gej.engine;

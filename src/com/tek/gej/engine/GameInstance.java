@@ -2,7 +2,7 @@
  * The GameInstance class is a template with every default function needed for a game
  * 
  * @author RedstoneTek
- * @version 0.3
+ * @version 0.31
  */
 
 package com.tek.gej.engine;

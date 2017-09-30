@@ -5,7 +5,7 @@
  * It will also manage the gameloop and framerate
  * 
  * @author RedstoneTek
- * @version 0.3
+ * @version 0.31
  */
 
 package com.tek.gej.engine;
