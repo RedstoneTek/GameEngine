@@ -1,7 +1,7 @@
 /*
  * The Handler class will handle your modules
  * extending the GameInstance class
- * @see GameInstance.class
+ * @see GameInstance.java
  * It will also manage the gameloop and framerate
  * 
  * @author RedstoneTek
@@ -27,6 +27,7 @@ public class Handler {
 	 * Handler constructor
 	 * @param fps This is the desired framerate
 	 * that the handle will try to achieve
+	 * @return Handler
 	 */
 	public Handler(int fps) {
 		this.fps = fps;
@@ -38,6 +39,7 @@ public class Handler {
 	 * every module and then proceed to
 	 * start ticking and rendering each and
 	 * every one of them
+	 * @return void
 	 */
 	public void init() {
 		
@@ -63,6 +65,7 @@ public class Handler {
 	 * every module and regulate it at the desired
 	 * framerate 
 	 * @see Class constructor
+	 * @return void
 	 */
 	private void startLoop() {
 		/*
@@ -123,6 +126,7 @@ public class Handler {
 	/*
 	 * Adds a module to the gameloop and 
 	 * stores the framerate in.
+	 * @return void
 	 */
 	public void registerModule(GameInstance instance) {
 		modules.add(instance);
