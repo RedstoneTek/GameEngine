@@ -99,6 +99,22 @@ public abstract class GameInstance {
 	}
 	
 	/*
+	 * This will set the background solid color
+	 * 
+	 * @param c Color to set
+	 * @return void
+	 */
+	public final void fillBackground(Color c) {
+		//Saves the color
+		Color d = graphics.getColor();
+		//Fills screen color
+		graphics.setColor(c);
+		graphics.fillRect(0, 0, width, height);
+		//Loads previous color
+		graphics.setColor(d);
+	}
+	
+	/*
 	 * This is the non-overridable preinit function, it creates the gui and initializes the keymanager
 	 * as well as the mousemanager
 	 * 

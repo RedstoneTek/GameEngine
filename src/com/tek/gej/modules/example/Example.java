@@ -6,6 +6,7 @@ import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
+import com.tek.gej.engine.AudioPlayer;
 import com.tek.gej.engine.GameInstance;
 import com.tek.gej.modules.example.entities.Enemy;
 import com.tek.gej.modules.example.entities.Player;
@@ -19,6 +20,8 @@ public class Example extends GameInstance{
 	public ArrayList<Projectile> projectiles;
 	
 	public BufferedImage exit, background;
+	
+	public AudioPlayer theme = new AudioPlayer();
 	
 	public int enemystreak = 0;
 	
@@ -50,8 +53,9 @@ public class Example extends GameInstance{
 		projectiles.clear();
 		player = new Player(250, 250, 50, 5, this);
 		enemy = new Enemy(50, 50, 40, 2, this);
-		exit = getImage("textures/exit.png");
-		background = getImage("textures/background.png");
+		exit = getImage("textures/example/exit.png");
+		background = getImage("textures/example/background.png");
+		theme.loop("textures/example/theme.wav");
 	}
 	
 	public void tick() {

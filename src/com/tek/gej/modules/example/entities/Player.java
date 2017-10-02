@@ -25,7 +25,7 @@ public class Player {
 		this.gi = gi;
 		this.view = Facing.FRONT;
 		
-		textures = new Spritesheet(gi.getImage("textures/spritesheet.png"), 20, 27, 12, 8);
+		textures = new Spritesheet(gi.getImage("textures/example/spritesheet.png"), 20, 27, 12, 8);
 	}
 	
 	public int centerx() {
