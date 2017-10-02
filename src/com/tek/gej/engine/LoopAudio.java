@@ -43,6 +43,9 @@ public class LoopAudio implements Runnable{
                 // wait for the playback completes
                 try {
                     Thread.sleep(1000);
+                    if(!lineListener.audioClip.isRunning()) {
+                    	break;
+                    }
                 } catch (InterruptedException ex) {
                     ex.printStackTrace();
                 }

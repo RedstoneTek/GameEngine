@@ -29,25 +29,6 @@ public class Example extends GameInstance{
 		super(500, 500, "Example", true);
 	}
 	
-	public void destroyProjectile(Projectile p) {
-		projectiles.remove(p);
-	}
-	
-	public void launchProjectile(Facing view) {
-		projectiles.add(new Projectile(player.view, player.x + player.size / 2, player.y + player.size / 2, player.size / 4, 20, this));
-	}
-	
-	public void drawUI() {
-		graphics.drawString("WASD - Move around", 5, 15);
-		graphics.drawString("SPACE - Shoot projectile", 5, 30);
-		graphics.drawString("Goal - Defeat the monstarrr", 5, 45);
-		graphics.drawString("Monster's Health - " + enemy.health, 5, 75);
-		graphics.drawString("Monster Deathstreak - " + enemystreak, 5, 90);
-		graphics.drawString("FPS: " + currentfps, 5, 120);
-		
-		graphics.drawImage(exit, width - exit.getWidth() - 5, 0, exit.getWidth(), exit.getHeight(), null);
-	}
-	
 	public void init() {
 		projectiles = new ArrayList<Projectile>();
 		projectiles.clear();
@@ -106,6 +87,25 @@ public class Example extends GameInstance{
 		FRONT,
 		LEFT,
 		RIGHT;
+	}
+	
+	public void destroyProjectile(Projectile p) {
+		projectiles.remove(p);
+	}
+	
+	public void launchProjectile(Facing view) {
+		projectiles.add(new Projectile(player.view, player.x + player.size / 2, player.y + player.size / 2, player.size / 4, 20, this));
+	}
+	
+	public void drawUI() {
+		graphics.drawString("WASD - Move around", 5, 15);
+		graphics.drawString("SPACE - Shoot projectile", 5, 30);
+		graphics.drawString("Goal - Defeat the monstarrr", 5, 45);
+		graphics.drawString("Monster's Health - " + enemy.health, 5, 75);
+		graphics.drawString("Monster Deathstreak - " + enemystreak, 5, 90);
+		graphics.drawString("FPS: " + currentfps, 5, 120);
+		
+		graphics.drawImage(exit, width - exit.getWidth() - 5, 0, exit.getWidth(), exit.getHeight(), null);
 	}
 
 }
